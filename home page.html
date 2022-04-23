@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHIKAYAT</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="homepage.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script>
+        $(document).on('mouseover', '.container .column', function () {
+            $(this).addClass('active').siblings().removeClass('active')
+        });
+    </script>
+
+</head>
+
+<body>
+    <section class="first">
+        <div class="navigation">
+            <nav>
+                <!-- <img src="logo2.png" class="logo1" height="80" width="150"> -->
+                <div class="head">SHIKAYATT</div>
+                <div class="navlink" id="navlink">
+                    <i class="fa fa-times fanav" onclick="HideMenu()" id="cross"></i>
+                    <ul>
+                        <li><a class="active" href="home page.html">HOME</a></li>
+                        <li><a href="formgs.html">MY COMPLAINTS</a></li>
+                        
+                        <li><a href="aboutus.html">ABOUT US</a></li>
+                        <li><a href="feedback.html">REVIEWS</a></li>
+                        <li><a href="login.html">LOGIN/SIGN UP</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars fanav" onclick="showMenu()" id="bars"></i>
+            </nav>
+        </div><br><br><br>
+        <script>
+            var navlinks = document.getElementById("navlink");
+            var bars = document.getElementById("bars");
+            var cross = document.getElementById("cross");
+            function showMenu() {
+                navlinks.style.right = "0px";
+                bars.style.visibility = "hidden";
+                navlinks.style.transition = "0.5s";
+            }
+            function HideMenu() {
+                navlinks.style.right = "-600px";
+                navlinks.style.transition = "0.5s";
+                bars.style.visibility = "visible";
+            }
+
+        </script>
+    </section>
+
+    <section class="second">
+        <div class="container">
+            <div class="column active">
+                <div class="content">
+
+                    <div class="box">
+                        <h2>Hostel</h2>
+                        <p>Here you can drop your complaints regarding all the problems faced by you in your day to day
+                            life in hostels.
+                        <div class="button"><a href="hostelform.html"><button onclick="visitPage();">Complain</button></div></a>
+                        </p>
+                    </div>
+                </div>
+                <div class="bg bg1"></div>
+            </div>
+
+            <div class="column">
+                <div class="content">
+
+                    <div class="box">
+                        <h2>Food</h2>
+                        <p>Here you can drop your complaints regarding all the problems faced by you related to your
+                            food facilities.
+                        <div class="button"><a href="foodform.html"><button onclick="visitPage();">Complain</button></div></a>
+                        </p>
+                    </div>
+                </div>
+                <div class="bg bg2"></div>
+            </div>
+
+            <div class="column">
+                <div class="content">
+
+                    <div class="box">
+                        <h2>Campus</h2>
+                        <p>Here you can drop your complaints regarding all the problems faced by you in Campus.
+                        <div class="button"><a href="Campusform.html"><button onclick="visitPage();">Complain</button></div></a>
+                        </p>
+                    </div>
+                </div>
+                <div class="bg bg3"></div>
+            </div>
+
+            <div class="column">
+                <div class="content">
+
+                    <div class="box">
+                        <h2>Academics</h2>
+                        <p>Here you can drop your complaints regarding all the problems faced by you in your Academics.
+                        <div class="button"><a href="academiicsform.html"><button onclick="visitPage();">Complain</button></div>
+                        </p>
+                    </div>
+                </div>
+                <div class="bg bg4"></div>
+            </div>
+
+        </div>
+
+        <script>
+            function visitPage() {
+                window.location = "Signin.html";
+            }
+        </script>
+
+    </section>
+    <footer class="footer-distributed">
+   
+        <div class="footer-left">
+
+            <h3 class="footerl"><img src="chitlogo.png" alt="not inserted" class="logo nav"></h3>
+
+            <p class="footer-links">
+                <a href="#" class="link-1">Home</a>
+                
+                <a href="#recent-games">Complaints</a>
+            
+               
+            
+                <a href="#tournaments">Contact Us</a>
+                
+                <a href="game.html">About us</a>
+            
+            </p>
+
+            <p class="footer-company-name" > TEAM VISION © 2022</p>
+        </div>
+
+        <div class="footer-center">
+
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <a style="color: white;" href="https://www.google.com/maps/place/Chitkara+University/@30.5160865,76.6575891,17z/data=!4m12!1m6!3m5!1s0x390fc32344a6e2d7:0x81b346dee91799ca!2sChitkara+University!8m2!3d30.5160865!4d76.6597778!3m4!1s0x390fc32344a6e2d7:0x81b346dee91799ca!8m2!3d30.5160865!4d76.6597778" target="_blank"><p><span>CHITKARA UNIVERSITY</span> RAJPURA,PUNJAB</p></a>
+            </div>
+
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+91 9083468482</p>
+            </div>
+
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:support@company.com">support@company.com</a></p>
+            </div>
+
+        </div>
+
+        <div class="footer-right">
+
+            <p class="footer-company-about">
+                <span>About the website</span>
+                This website deals with all your problems that you deal with your day to day college life.
+               
+            </p>
+
+            <div class="footer-icons">
+
+                <a href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a>
+                <a href="https://twitter.com/?lang=en-in"><i class="fa fa-twitter"></i></a>
+                <a href="https://in.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+                <a href="https://github.com/"><i class="fa fa-github"></i></a>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About Us Section</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="aboutus.css">
+</head>	
+<body>
+    <section class="first">
+        <div class="navigation">
+            <nav>
+                            <div class="head">Shikayatt</div>
+                <div class="navlink" id="navlink">
+                    <i class="fa fa-times fanav" onclick="HideMenu()" id="cross"></i>
+                    <ul>
+                        <li><a href="home page.html">HOME</a></li>
+                        <li><a href="formgs.html">MY COMPLAINTS</a></li>
+                        
+                        
+                        <li><a class="active" href="aboutus.html">ABOUT US</a></li>
+                        <li><a href="login.html">LOGIN/SIGN UP</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars fanav" onclick="showMenu()" id="bars"></i>
+            </nav>
+        </div><br><br><br>
+        <script>
+            var navlinks = document.getElementById("navlink");
+            var bars = document.getElementById("bars");
+            var cross = document.getElementById("cross");
+            function showMenu() {
+                navlinks.style.right = "0px";
+                bars.style.visibility = "hidden";
+                navlinks.style.transition = "0.5s";
+            }
+            function HideMenu() {
+                navlinks.style.right = "-600px";
+                navlinks.style.transition = "0.5s";
+                bars.style.visibility = "visible";
+            }
+
+        </script>
+    </section>
+	<div class="section">
+		<div class="container">
+			<div class="content-section">
+				<div class="title">
+					<h1>About Us</h1>
+				</div>
+				<div class="content">
+					<h3>What basically our website is about!!</h3>
+					<p>This website provides you with the assurance of your complaints to be sucessfully reached to the desired target. This website would surely help to make your complaints to be fulfilled and draw the faculty's attention toward that issue you are struggling with.</p>
+					<div class="button">
+						<a href="login.html">Read More</a>
+					</div>
+				</div>
+				<div class="social">
+					<a href=""><i class="fab fa-facebook-f"></i></a>
+					<a href=""><i class="fab fa-twitter"></i></a>
+					<a href=""><i class="fab fa-instagram"></i></a>
+				</div>
+			</div>
+			<div class="image-section">
+				<img src="aboutus.webp">
+			</div>
+		</div>
+	</div>
+
+	
+</body>
+</html>

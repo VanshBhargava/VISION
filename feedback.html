@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="feedback.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="first">
+        <div class="navigation">
+            <nav>
+                <div class="head">SHIKAYATT</div>
+                <div class="navlink" id="navlink">
+                    <i class="fa fa-times fanav" onclick="HideMenu()" id="cross"></i>
+                    <ul>
+                        <li><a  href="home page.html">HOME</a></li>
+                        <li><a href="formgs.html">MY COMPLAINTS</a></li>
+                        
+                        
+                        <li><a href="aboutus.html">ABOUT US</a></li>
+                        <li><a class="active" href="feedback.html">REVIEWS</a></li>
+                        <li><a href="login.html">LOGIN/SIGN UP</a></li>
+                       
+                    </ul>
+                </div>
+                <i class="fa fa-bars fanav" onclick="showMenu()" id="bars"></i>
+            </nav>
+        </div><br><br><br>
+        <script>
+            var navlinks = document.getElementById("navlink");
+            var bars = document.getElementById("bars");
+            var cross = document.getElementById("cross");
+            function showMenu() {
+                navlinks.style.right = "0px";
+                bars.style.visibility = "hidden";
+                navlinks.style.transition = "0.5s";
+            }
+            function HideMenu() {
+                navlinks.style.right = "-600px";
+                navlinks.style.transition = "0.5s";
+                bars.style.visibility = "visible";
+            }
+
+        </script>
+    </section>
+    <script src="https://use.fontawesome.com/a6f0361695.js"></script><br>
+
+    
+    <h6 id="fh6"><b>WE APPRECIATE YOUR REVIEW!</b></h6>
+    
+    
+    <form id="feedback" action="">
+      <div class="pinfo">Your personal info</div>
+      
+    <div class="form-group">
+      <div class="col-md-4 inputGroupContainer">
+      <div class="input-group">
+      <span class="input-group-addon"><i class="fa fa-user"></i></span>
+      <input  name="name" placeholder="John Doe" class="form-control"  type="text">
+        </div>
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <div class="col-md-4 inputGroupContainer">
+      <div class="input-group">
+      <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+        <input name="email" type="email" class="form-control" placeholder="john.doe@yahoo.com">
+         </div>
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <div class="col-md-4 inputGroupContainer">
+      <div class="input-group">
+      <span class="input-group-addon"><i class="fa fa-globe"></i></span>
+      <input  name="URL" placeholder="https://google.com" class="form-control"  type="url">
+        </div>
+      </div>
+    </div>
+    
+     <div class="pinfo">Rate our overall services.</div>
+      
+    
+    <div class="form-group">
+      <div class="col-md-4 inputGroupContainer">
+      <div class="input-group">
+      <span class="input-group-addon"><i class="fa fa-heart"></i></span>
+       <select class="form-control" id="rate">
+          <option value="1star">1</option>
+          <option value="2stars">2</option>
+          <option value="3stars">3</option>
+          <option value="4stars">4</option>
+          <option value="5stars">5</option>
+        </select>
+        </div>
+      </div>
+    </div>
+    
+     <div class="pinfo">Write your feedback.</div>
+      
+    
+    <div class="form-group">
+      <div class="col-md-4 inputGroupContainer">
+      <div class="input-group">
+      <span class="input-group-addon"><i class="fa fa-pencil"></i></span>
+      <textarea class="form-control" id="review" rows="3"></textarea>
+     
+        </div>
+      </div>
+    </div>
+    
+     <button type="submit" class="btn btn-primary"><a href="home page.html">Submit</a></button>
+    
+    
+    </form>
+</body>
+</html>

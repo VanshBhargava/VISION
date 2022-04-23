@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script>
+            function sendmail(){
+                console.log("in send function");
+                var topic=$("#Topic").val();
+                var roll=$("#Roll").val();
+                var mail=$("#mail").val();
+                var name=$("#Name").val();
+                var Complaint=$("#Complaint").val();
+                var group=$("#group").val();
+                
+                var subject="complaint regarding "+topic;
+                var body="Name: "+name+"<br>Roll No. : "+roll+"<br>Complaint: "+Complaint+"<br>Group No: "+group;
+                
+                Email.send({
+                    Host : "smtp.gmail.com",
+                    Username : "vanshbhargava03@gmail.com",
+                    Password : "uxqtryptedtwgrrf",
+                    To : 'vidushij078@gmail.com',
+                    From : "vanshbhargava03@gmail.com",
+                    Subject : ""+subject,
+                    Body : ""+body
+                }).then(
+                    message => {
+                        if(message=="OK"){
+                            alert("Thanks for your feedback.");
+                        }
+                        else{
+                            alert("Error sending response. Try again.")
+                        }
+                    }
+                );
+            }
+        </script>
+    <style>
+        body{
+            background: -webkit-linear-gradient(left, #E07A5F, #564D80);
+            box-shadow: #000000;
+        }
+            .register .nav-tabs .nav-link:hover{
+                border: none;
+            }
+            .text-align{
+                margin-top: -3%;
+                margin-bottom: -9%;
+
+                padding: 10%;
+                margin-left: 30%;
+            }
+            .form-new{
+                margin-right: 22%;
+                margin-left: 20%;
+            }
+            .register-heading{
+                margin-left: 21%;
+                margin-bottom: 10%;
+                color: #e9ecef;
+            }
+            .register-heading h1{
+                margin-left: 21%;
+                margin-bottom: 10%;
+                color: #e9ecef;
+            }
+            .register{
+                background: -webkit-linear-gradient(left, #E07A5F, #564D80);
+                margin-top: 3%;
+                padding: 3%;
+                border-radius: 2.5rem;
+            }
+            .btnSubmit
+            {
+                width: 50%;
+                border-radius: 1rem;
+                padding: 1.5%;
+                color: white;
+                background-color: #44344F;
+                border: none;
+                cursor: pointer;
+                margin-right: 6%;
+                /* color: rgb(246, 246, 252); */
+                margin-top: 4%;
+            }
+            *{
+    font-family: 'Times New Roman', Times, serif;
+  }
+  body{
+    margin: 0;
+    padding: 0;
+    font-family:cursive;
+    width: 100%;
+  }
+  .image{
+    position: absolute;
+    width: 100%;
+  }
+  /* .logo1{border-radius: 30px;
+      float: left; 
+      position: relative;
+      right: 50px;  
+     } */
+  nav{
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100px;
+      padding: 10px 0 10px 90px;
+      box-sizing: border-box;
+      background: #564d80;
+      z-index: 4;
+  }
+  div.head{
+      padding: 22px 20px;
+      height: 80px;
+      float: left;
+      font-size: 24px;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: #f4f1de;
+      position: relative;
+      right: 50px;
+      font-family: 'Times New Roman', Times, serif;
+  }
+  nav ul{
+      list-style: none;
+      float: right;
+      margin: 0;
+      padding: 0;
+      
+      
+  }
+  .logo{
+      font-size: 20px;
+  }
+  nav ul li{
+    display: inline;
+  }
+  nav ul li a{
+      line-height: 80px;
+      color: #00203fff;
+      padding: 12px 30px;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 1vw;
+      font-weight: bold;
+  }
+  nav ul li a:hover{
+      background: #f4f1de;
+      border-radius: 6px ;
+      color: #000;
+  }
+  nav ul li a.active{
+    background: #f4f1de;
+      border-radius: 6px;
+  }
+  div.border{
+      margin: 6% 0 0;
+      width: 100%;
+      background: rgba(0, 31, 63, 0.664);
+      height: 635px;
+      position:relative;
+      top: 40%;
+      
+  }
+  nav .fanav{
+    display: none;
+  }
+  
+ 
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .wrapper{
+    margin-top: 10%;
+  }
+  .wrapper h1{
+    font-family: sans-serif;
+    font-size: 52px;
+    margin-bottom: 60px;
+    text-align: center;
+    color: #0d1b46;
+  }
+  
+  .container{ 
+    max-width: 1170px;
+    
+    margin: auto;
+  }
+  ul{
+    list-style: none;
+  }
+  
+  a{
+    text-decoration: none;
+  }
+  a:hover{
+    color: #ece3e2;
+  }
+  .imag1{
+    position: relative;
+    top: 2px;
+    left: 640px;
+    bottom: 20px;
+    float: left;
+  }
+  div.heading{
+    font-size: 16px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+		}
+    </style>
+
+</head>
+<body>
+    <body>
+        <section class="first">
+            <div class="navigation">
+                    <nav>
+                            <div class="head">SHIKAYATT</div>
+                            <div class="navlink" id="navlink">
+                                    <i class="fa fa-times fanav" onclick="HideMenu()" id="cross"></i>
+                                    <ul>
+                                            <li><a class="active" href="home page.html">HOME</a></li>
+                                            <li><a href="formgs.html">MY COMPLAINTS</a></li>
+                                            <!-- <li><a href="#">HELP & FAQs</a></li> -->
+                                            
+                                            <li><a href="aboutus.html">ABOUT US</a></li>
+                                            <li><a href="login.html">LOGIN/SIGN UP</a></li>
+                                    </ul>
+                            </div>
+                            <i class="fa fa-bars fanav" onclick="showMenu()" id="bars"></i>
+                    </nav>
+            </div><br><br><br>
+            <script>
+                    var navlinks = document.getElementById("navlink");
+                    var bars = document.getElementById("bars");
+                    var cross = document.getElementById("cross");
+                    function showMenu() {
+                            navlinks.style.right = "0px";
+                            bars.style.visibility = "hidden";
+                            navlinks.style.transition = "0.5s";
+                    }
+                    function HideMenu() {
+                            navlinks.style.right = "-600px";
+                            navlinks.style.transition = "0.5s";
+                            bars.style.visibility = "visible";
+                    }
+    
+            </script>
+    </section>
+    
+<div class="container register">
+            <div class="row">
+                <div class="col-md-12">
+                        <div class="tab-pane fade show active text-align form-new" id="home" role="tabpanel" aria-labelledby="home-tab">
+                            <h3 class="register-heading"><center>Drop Complains Here !!</center></h3>
+                            <div class="row register-form">
+                                <div class="col-md-12">
+                                    <form method="post" action="javascript:sendmail()" autocomplete="off" name="google-sheet">
+                                        <div class="form-group">
+                                            <input type="text" name="Name" class="form-control" placeholder="Your Name *" value="" required="" id="Name"/>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" name="Email" class="form-control" placeholder="Your College Email *" value="" required="" id="mail"/>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" name="Roll" class="form-control" placeholder="Your Roll Number *" value="" required="" id="Roll"/>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" name="group no." class="form-control" placeholder="Group No. *" value="" required="" id="group"/>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" name="Complain" class="form-control" placeholder="Your Complain *" value="" required="" id="Complaint"/>
+                                        </div>
+
+                                        <div class="form-group">
+                                        <input list="options" name="Complaint Regarding" placeholder="Select Categories *" id="Topic"/>
+                                        <datalist id = "options">
+                                            <option value="Mess">
+                                            </option>
+                                            <option value="Canteen">
+                                            </option>
+                                            <!-- <option value="Technical">
+                                            </option> -->
+                                            <!-- <option value="Others">
+                                            </option> -->
+                                        </datalist>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="submit" name="submit" class="btnSubmit btn-block" value="Submit"/>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+          
+          <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbzBrqfH--JNnvj_7E0dHn4Mf9G59gl3G7GAGF5uvJtBcOejlS0/exec'
+            const form = document.forms['google-sheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            //     .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+            //     .catch(error => console.error('Error!', error.message))
+            // })
+          </script>
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        
+    
+</body>
+</html>

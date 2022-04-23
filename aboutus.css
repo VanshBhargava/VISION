@@ -1,0 +1,254 @@
+
+*{
+    font-family: 'Times New Roman', Times, serif;
+  }
+  body{
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+    width: 100%;
+  }
+  .image{
+    position: absolute;
+    width: 100%;
+  }
+  .logo1{border-radius: 30px;
+      float: left; 
+      position: relative;
+      right: 50px;  
+     }
+  nav{
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100px;
+      padding: 10px 0 10px 90px;
+      box-sizing: border-box;
+      background: #564d80;
+      z-index: 4;
+  }
+  div.head{
+      padding: 22px 20px;
+      height: 80px;
+      float: left;
+      font-size: 24px;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: #f4f1de;
+      position: relative;
+      right: 50px;
+      font-family: 'Times New Roman', Times, serif;
+  }
+  nav ul{
+      list-style: none;
+      float: right;
+      margin: 0;
+      padding: 0;
+      
+      
+  }
+  .logo{
+      font-size: 20px;
+  }
+  nav ul li{
+    display: inline;
+  }
+  nav ul li a{
+      line-height: 80px;
+      color: #00203fff;
+      padding: 12px 30px;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 1vw;
+      font-weight: bold;
+  }
+  nav ul li a:hover{
+      background: #f4f1de;
+      border-radius: 6px ;
+      color: #000;
+  }
+  nav ul li a.active{
+    background: #f4f1de;
+      border-radius: 6px;
+  }
+  div.border{
+      margin: 6% 0 0;
+      width: 100%;
+      background: rgba(0, 31, 63, 0.664);
+      height: 635px;
+      position:relative;
+      top: 40%;
+      
+  }
+  nav .fanav{
+    display: none;
+  }
+  
+ 
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  div.heading{
+    font-size: 16px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+  }
+  .wrapper{
+    margin-top: 10%;
+  }
+  .wrapper h1{
+    font-family: sans-serif;
+    font-size: 52px;
+    margin-bottom: 60px;
+    text-align: center;
+    color: #0d1b46;
+  }
+  
+  .container{ 
+    max-width: 1170px;
+    
+    margin: auto;
+  }
+  ul{
+    list-style: none;
+  }
+  
+  a{
+    text-decoration: none;
+  }
+  a:hover{
+    color: #ece3e2;
+  }
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+*{
+	margin:0px;
+	padding:0px;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+.section{
+	width: 100%;
+	min-height: 100vh;
+	background-color: #e07a5f;
+}
+.container{
+	width: 80%;
+	display: block;
+	margin:auto;
+	padding-top: 100px;
+}
+.content-section{
+	float: left;
+	width: 55%;
+}
+.image-section{
+	float: right;
+	width: 40%;
+
+}
+div.heading{
+  font-size: 16px;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+}
+.wrapper h1{
+  font-family: sans-serif;
+  font-size: 52px;
+  margin-bottom: 60px;
+  text-align: center;
+  color: #0d1b46;
+}
+.image-section img{
+	width: 100%;
+	height: auto;
+    border-radius: 5%;
+}
+.content-section .title{
+	text-transform: uppercase;
+	font-size: 28px;
+}
+.content-section .content h3{
+	margin-top: 20px;
+	color:#5d5d5d;
+	font-size: 21px;
+}
+.content-section .content p{
+	margin-top: 10px;
+	font-family: sans-serif;
+	font-size: 18px;
+	line-height: 1.5;
+}
+.content-section .content .button{
+	margin-top: 30px;
+}
+.content-section .content .button a{
+	background-color: #3d3d3d;
+	padding:12px 40px;
+	text-decoration: none;
+	color:#fff;
+	font-size: 25px;
+	letter-spacing: 1.5px;
+}
+.content-section .content .button a:hover{
+	background-color: #a52a2a;
+	color:#fff;
+}
+.content-section .social{
+	margin: 40px 40px;
+}
+.content-section .social i{
+	color:#a52a2a;
+	font-size: 30px;
+	padding:0px 10px;
+}
+.content-section .social i:hover{
+	color:#3d3d3d;
+}
+@media screen and (max-width: 768px){
+	.container{
+	width: 80%;
+	display: block;
+	margin:auto;
+	padding-top:50px;
+}
+.content-section{
+	float:none;
+	width:100%;
+	display: block;
+	margin:auto;
+}
+.image-section{
+	float:none;
+	width:100%;
+	
+}
+.image-section img{
+	width: 100%;
+	height: auto;
+	display: block;
+	margin:auto;
+}
+.content-section .title{
+	text-align: center;
+	font-size: 19px;
+}
+.content-section .content .button{
+	text-align: center;
+}
+.content-section .content .button a{
+	padding:9px 30px;
+}
+.content-section .social{
+	text-align: center;
+}
+
+}
